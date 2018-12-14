@@ -8,6 +8,6 @@ Here is the list of projects:
 {% for repository in site.github.public_repositories %}
   {% if repository.name != 'epmtl.github.io' %}
   * [{{ repository.name }}]({{ repository.html_url }})
-  > repository.description
+  > {{ repository.description }}
   {% endif %}
 {% endfor %}
